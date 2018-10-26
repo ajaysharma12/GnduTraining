@@ -44,7 +44,11 @@ public class DatabaseConnection {
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         }
 	}
-
+	
+	/**
+	 * 
+	 * @param connect: This is the parameter for database connection (Ajay)
+	 */
 	public void readEmployees(Connection connect) {
 		ResultSet resultSet = null;
 		try {

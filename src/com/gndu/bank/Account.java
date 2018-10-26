@@ -1,6 +1,8 @@
 package com.gndu.bank;
 
 public class Account {
+	
+	// Coded by ajay sharma
 	String name;
 	String accountType;
 	int balance = 0;
@@ -37,12 +39,14 @@ public class Account {
 	}
 	
 	public int withdraw(int money) throws NotEnoughBalanceException{
+		
+		//TODO add special condition for dollar withdrawal.
+		//FIXME simple interest calculation problem
+		
 		if(balance > money){
-			balance = balance - money;
-		}else{
+			balance = balance - money;		}else{
 			throw new NotEnoughBalanceException("Balance is low!!");
 		}
-		return balance;
-	}
+		return balance;	}
 	
 }
